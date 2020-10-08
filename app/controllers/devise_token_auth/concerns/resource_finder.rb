@@ -40,6 +40,6 @@ module DeviseTokenAuth::Concerns::ResourceFinder
   end
 
   def provider
-    'email'
+    ['email', 'leaddesk']
   end
 end
