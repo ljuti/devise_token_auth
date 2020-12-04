@@ -34,8 +34,8 @@ module DeviseTokenAuth::Concerns::User
     end
 
     # can't set default on text fields in mysql, simulate here instead.
-    after_save :set_empty_token_hash
-    after_initialize :set_empty_token_hash
+    # after_save :set_empty_token_hash
+    # after_initialize :set_empty_token_hash
 
     # get rid of dead tokens
     before_save :destroy_expired_tokens
